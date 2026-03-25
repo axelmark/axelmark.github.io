@@ -1,106 +1,20 @@
 :root {
-    --bg: #f9f9f9;
-    --surface: #ffffff;
-    --text: #333;
+    --bg: #ffffff;
+    --surface: #f9f9f9;
+    --text: #000000;
     --text-secondary: #666;
-    --primary: #2c3e50;
-    --primary-light: #42b983;
     --border: #eaeaea;
     --shadow: rgba(0,0,0,0.1);
 }
-
 .dark {
     --bg: #1a1a1a;
     --surface: #2d2d2d;
     --text: #f0f0f0;
     --text-secondary: #aaa;
-    --primary: #42b983;
-    --primary-light: #5fcb9b;
     --border: #444;
     --shadow: rgba(0,0,0,0.3);
 }
-
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background: var(--bg);
     color: var(--text);
-    transition: background 0.3s, color 0.3s;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Анимации */
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.5s ease;
-}
-.fade-enter-from, .fade-leave-to {
-    opacity: 0;
-}
-
-:root {
-    --bg: #f9f9f9;
-    --surface: #ffffff;
-    --text: #333;
-    --text-secondary: #666;
-    --primary: #2c3e50;
-    --primary-light: #42b983;
-    --border: #eaeaea;
-    --shadow: rgba(0,0,0,0.1);
-}
-
-.dark {
-    --bg: #1a1a1a;
-    --surface: #2d2d2d;
-    --text: #f0f0f0;
-    --text-secondary: #aaa;
-    --primary: #42b983;
-    --primary-light: #5fcb9b;
-    --border: #444;
-    --shadow: rgba(0,0,0,0.3);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    transition: background 0.3s, color 0.3s;
-    line-height: 1.6;
-}
-
-/* Плавная прокрутка и отступ для якорей, чтобы не перекрывались меню */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* отступ сверху при прокрутке к якорю */
-}
-
-/* Адаптация под мобильные устройства, если меню выше */
-@media (max-width: 700px) {
-    html {
-        scroll-padding-top: 130px;
-    }
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Анимации */
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.5s ease;
-}
-.fade-enter-from, .fade-leave-to {
-    opacity: 0;
 }
